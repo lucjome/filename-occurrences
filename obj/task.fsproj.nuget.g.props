@@ -12,7 +12,11 @@
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <SourceRoot Include="/home/lucas/.nuget/packages/" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)nunit/4.0.0/build/NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit/4.0.0/build/NUnit.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNUnit Condition=" '$(PkgNUnit)' == '' ">/home/lucas/.nuget/packages/nunit/4.0.0</PkgNUnit>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">/home/lucas/.nuget/packages/fsharp.core/8.0.101</PkgFSharp_Core>
   </PropertyGroup>
 </Project>

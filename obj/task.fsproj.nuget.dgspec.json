@@ -39,6 +39,11 @@
               "target": "Package",
               "version": "[8.0.101, )",
               "generatePathProperty": true
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.0.0, )",
+              "generatePathProperty": true
             }
           },
           "imports": [
