@@ -11,9 +11,10 @@
    ```fish
    dotnet run -- <file>
    ```
-- Example
+## Example
    ```fish
    dotnet run -- example.txt
+   ```
 
 
 
