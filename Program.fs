@@ -15,7 +15,7 @@ namespace Occurrences
                 |> Seq.length // Finally, yield the count of matching lines
                 
             with
-                
+            
             | :? System.IO.FileNotFoundException ->
                 failwithf "Error: File not found - %s" fileName
             | :? System.ArgumentException ->
