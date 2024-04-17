@@ -11,20 +11,22 @@ type Tests() =
 
     // Test counter works properly
     [<Test>]
-    member this.counterTest() =
+    member this.TestCount() =
         // Specifying directory for test files
         let directoryPath: string = "/home/lucas/prog/filename-occurrences/files/"
 
         Directory.GetFiles(directoryPath) 
         |> Array.iter (fun filePath -> // Iterating over testfiles in 'files'
+
             let testResult: int = count filePath (Path.GetFileNameWithoutExtension filePath)
             let expectedResult: int = 3 // Set to 3 for brevity. All files have occurrence 3
+
             Assert.That(expectedResult, Is.EqualTo(testResult)))
 
 
     // Test for count returning 0 with empty file
     [<Test>]
-    member this.emptyFileTest() =
+    member this.TestCountEmptyFile() =
         // Path to an empty file
         let filePath: string = "/home/lucas/prog/filename-occurrences/EmptyFile.whatever"
 
@@ -35,5 +37,3 @@ type Tests() =
 
         // Assert equality between the expected result and test result
         Assert.That(expectedResult, Is.EqualTo(testResult))
-
-    // Test for run  
