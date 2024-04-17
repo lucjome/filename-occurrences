@@ -1,4 +1,4 @@
-# Task
+# A counter for filename occurrence for a given file
 ## Prerequisites
 - Make sure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed
 -  ```fish
@@ -15,7 +15,8 @@
    ```fish
    dotnet run -- example.txt
    ```
-
+## NOTE
+Tests and application must be run inside the folder for the cloned git repository
 
 
 ### Assumptions
