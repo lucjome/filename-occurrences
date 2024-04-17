@@ -9,8 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="UnitTest1.fs"/>
-    <ProjectReference Include="/home/lucas/prog/task/task.fsproj"/>
+    <Compile Include="TestModule.fs"/>
+    <ProjectReference Include="/home/lucas/prog/filename-occurrences/task.fsproj"/>
   </ItemGroup>
 
   <ItemGroup>

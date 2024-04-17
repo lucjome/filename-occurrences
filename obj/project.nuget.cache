@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8TGpZVEq/yICyrFktlUjsDP/jo88r0vYBUYSI5vZKyRpH7H7Cg97qY0TRvb9uC8lfxXdAImN1NTYsaDusJDlng==",
+  "dgSpecHash": "NXjXSxmPF/AGI5mtorRyaPDWvG78rtdWJyG7uDTTbs8VR5SnewWVCA1LtpqkbnBr3GH5adxx/xnkCj9FaLNAjg==",
   "success": true,
-  "projectFilePath": "/home/lucas/prog/task/task.fsproj",
+  "projectFilePath": "/home/lucas/prog/filename-occurrences/task.fsproj",
   "expectedPackageFiles": [
     "/home/lucas/.nuget/packages/fsharp.core/8.0.101/fsharp.core.8.0.101.nupkg.sha512",
     "/home/lucas/.nuget/packages/nunit/4.0.0/nunit.4.0.0.nupkg.sha512",

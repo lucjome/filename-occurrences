@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "64FZYJXDMtCaCGc/vrICgVpAgOxOPgiT2g3pF5dLPS5Iecm/ixhrzA07SovCJERJj0EX8fxbHlWSzwKFgvHmuQ==",
+  "dgSpecHash": "8jJvIJ83Awqga9NGOyVA1Pyc0Gv71O8Go+UGNtbu0RTPhGwqcrQRp3w13IntpPFYOqqJ7MBTuz4eYxBTg0BIlA==",
   "success": true,
-  "projectFilePath": "/home/lucas/prog/task/tests/tests.fsproj",
+  "projectFilePath": "/home/lucas/prog/filename-occurrences/tests/tests.fsproj",
   "expectedPackageFiles": [
     "/home/lucas/.nuget/packages/fsharp.core/8.0.101/fsharp.core.8.0.101.nupkg.sha512",
     "/home/lucas/.nuget/packages/microsoft.codecoverage/17.9.0/microsoft.codecoverage.17.9.0.nupkg.sha512",

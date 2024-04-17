@@ -1,34 +1,39 @@
 namespace Tests
 
-open Occurrences.Program
+open NUnit
 open NUnit.Framework
+open Occurrences.Program
 open System
 open System.IO
 
-    [<TestFixture>]
+[<TestFixture>]
+type Tests() =
 
-    type Tests() =
-
+    // Test counter works properly
     [<Test>]
+    member this.counterTest() =
+        // Specifying directory for test files
+        let directoryPath: string = "/home/lucas/prog/filename-occurrences/files/"
 
-    member this.countTest() = // 
-        let testFile : string = "Application.fs"
-        let testFileContent : string = """
-               Application
-               Application.fs
-               Application
-               
-               text
-               AppLiCation
-               
-               othertext
-               Application.fs
-               Application
-               sometext""" 
-        //let testFileContent = [ |"application"; "Application.fs"; "Application"; "text"; "AppLiCation";
-        //                         ""; "othertext"; "Application.fs"; "Application" ""; "sometext"]
+        Directory.GetFiles(directoryPath) 
+        |> Array.iter (fun filePath -> // Iterating over testfiles in 'files'
+            let testResult: int = count filePath (Path.GetFileNameWithoutExtension filePath)
+            let expectedResult: int = 3 // Set to 3 for brevity. All files have occurrence 3
+            Assert.That(expectedResult, Is.EqualTo(testResult)))
 
-        let testResult = Program.count testFileContent (Path.GetFileNameWithoutExtension testFile)
 
-        Assert.AreEqual(5, testResult)
-        
+    // Test for count returning 0 with empty file
+    [<Test>]
+    member this.emptyFileTest() =
+        // Path to an empty file
+        let filePath: string = "/home/lucas/prog/filename-occurrences/EmptyFile.whatever"
+
+        let testResult: int = count filePath (Path.GetFileNameWithoutExtension filePath) 
+
+        // Expected result for an empty file
+        let expectedResult: int = 0
+
+        // Assert equality between the expected result and test result
+        Assert.That(expectedResult, Is.EqualTo(testResult))
+
+    // Test for run  

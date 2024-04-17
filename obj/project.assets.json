@@ -161,11 +161,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lucas/prog/task/task.fsproj",
+      "projectUniqueName": "/home/lucas/prog/filename-occurrences/task.fsproj",
       "projectName": "task",
-      "projectPath": "/home/lucas/prog/task/task.fsproj",
+      "projectPath": "/home/lucas/prog/filename-occurrences/task.fsproj",
       "packagesPath": "/home/lucas/.nuget/packages/",
-      "outputPath": "/home/lucas/prog/task/obj/",
+      "outputPath": "/home/lucas/prog/filename-occurrences/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lucas/.nuget/NuGet/NuGet.Config"
