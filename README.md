@@ -24,7 +24,7 @@
 - content of the file is separated by newline
 
 ### Limitations
-- The content (lines of potential filenames) must be separated by newlines, which requires formatting on the user's part if this is not the case for them. This was a deliberate sacrifice I made to maintain the beauty and conciseness of the program. Fixing this would probably force me to adopt more imperative principles for the code responsible for counting the occurrences
+- The content (lines of potential filenames) must be separated by newlines, which requires formatting on the user's part if this is not the case for them. This was a deliberate sacrifice I made to maintain the readability, beauty and conciseness of the program. Fixing this would probably force me to adopt more imperative principles for the code responsible for counting the occurrences
 - As for performance, my functional approach did not suffer much. Using while-loops and mutable states would make my code slightly faster but for such a small script I considered it not so worth-it. I also see to the fact that optmizing performance was not the main job here 
 - My other approaches for counting have been left in a separate file 'AlternativeCounters.fs'
 
