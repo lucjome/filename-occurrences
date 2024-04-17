@@ -20,7 +20,7 @@ Application must be run inside the folder for the cloned git repository
 
 ### Assumptions
 - case-sensitivity (myfile.txt does not count mYfIlE.txt nor Myfile.txt in its contents)
-- file encoding behaves normally and works with 
+- file encoding behaves normally
 - content of the file is separated by newline
 
 ### Limitations
