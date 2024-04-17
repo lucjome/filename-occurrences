@@ -1,7 +1,7 @@
 # Task
 ## Prerequisites
-1. Make sure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download)
-2. ```fish
+- Make sure you have the [.NET SDK](https://dotnet.microsoft.com/en-us/download) installed
+-  ```fish
    dotnet --version
    
 ## Instructions
@@ -11,7 +11,7 @@
    ```fish
    dotnet run -- <file>
    ```
-   Example
+- Example
    ```fish
    dotnet run -- example.txt
 
